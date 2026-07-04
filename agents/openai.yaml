@@ -1,0 +1,7 @@
+interface:
+  display_name: "Nature Summary"
+  short_description: "Literature review workflow"
+  default_prompt: "Use $nature-summary to build a literature-review project for: "
+policy:
+  allow_implicit_invocation: true
+

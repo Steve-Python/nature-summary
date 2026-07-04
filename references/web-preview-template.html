@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{PROJECT_TITLE}}</title>
+  <!--
+    Template contract for nature-summary:
+    - index.html lists categorized papers and links to reader.html?id=<paper-id>.
+    - reader.html renders embedded Markdown readers from readers/**/paper.md.
+    - preview.html renders project Markdown and CSV files from draft/ and metadata/.
+    - Markdown pages use a wide centered reading panel.
+    - CSV table mode uses 80% of the right-side content area, fills the viewport height,
+      and keeps vertical/horizontal scrolling inside the table container.
+    - Generated pages must be backend-free: all data is embedded as application/json.
+  -->
+</head>
+<body>
+  <div id="app"></div>
+  <script id="data" type="application/json">{{EMBEDDED_JSON}}</script>
+  <script>
+    // scripts/build_reader.py owns the concrete implementation.
+  </script>
+</body>
+</html>
+
